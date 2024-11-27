@@ -28,11 +28,15 @@
                     <ColumnDefinition Width="*"/>
                    
                 </Grid.ColumnDefinitions>
-                <Entry Grid.Column="0" Grid.Row="0" Placeholder="Tapez la taille"/>
-                <Entry Grid.Column="0" Grid.Row="1" Placeholder="Tapez la taille"/>
-                <ImageButton Grid.Column="1" Grid.Row="0" Resources="poidhomme"/>
-                <ImageButton Grid.Column="1" Grid.Row="1" Resources="femme"/>
-
+                <Entry Grid.Column="0" Grid.Row="0" Placeholder="Tapez votre taille"/>
+                <Entry Grid.Column="0" Grid.Row="1" Placeholder="Tapez votre taille"/>
+                <ImageButton Grid.Column="1" Grid.Row="0" Source="poidhomme" Clicked="hommebtn"/>
+                <ImageButton Grid.Column="1" Grid.Row="1" Source="femme" Clicked="femmebtn"/>
+                <Label Text="Kg"
+                       Grid.Column="2" Grid.Row="0"
+                       />
+                <Label Text="Kg"
+                       Grid.Column="2" Grid.Row="1"/>
             </Grid>
 
 
