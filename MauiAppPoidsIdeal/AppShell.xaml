@@ -6,10 +6,16 @@
     xmlns:local="clr-namespace:MauiAppPoidsIdeal"
     Shell.FlyoutBehavior="Disabled"
     Title="MauiAppPoidsIdeal">
-
-    <ShellContent
-        Title="Home"
+    <TabBar>
+        <ShellContent
+            
+        Title="Poids ideal"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+        <ShellContent
+            Title="A propos"
+            ContentTemplate="{DataTemplate local:AboutPage}"
+            Route="MainPage" />
 
+    </TabBar>
 </Shell>
