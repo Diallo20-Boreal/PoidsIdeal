@@ -8,12 +8,21 @@
             HeightRequest="150"
             WidthRequest="150"
             Source="Poids.png"
-            VerticalOptions="CenterAndExpand"
-            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
             />
         <Label 
-            Text="Welcome to .NET MAUI!"
+            TextColor="Blue"
+            FontAttributes="Italic"
+            Text="eSanté"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Label 
+            TextColor="Red"
+            FontAttributes="Bold"
+            Text="Version 5.0"
+             VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            />
     </VerticalStackLayout>
 </ContentPage>

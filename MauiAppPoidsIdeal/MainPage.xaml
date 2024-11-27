@@ -9,12 +9,18 @@
             Spacing="25">
             <Image
                 Source="poids.png"
-                HeightRequest="185" />
+                HeightRequest="185"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
 
             <Label
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
                 Text="Souhaitez-vous connaitre votre poids"/>
 
             <Label
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
                 Text="Entrez votre taille (en CM) et cliquez sur le bouton correspondant"
                  />
             <Grid>
@@ -28,8 +34,8 @@
                     <ColumnDefinition Width="*"/>
 
                 </Grid.ColumnDefinitions>
-                <Entry x:Name="TaillehEntry" Grid.Column="0" Grid.Row="0" Placeholder="Tapez votre taille"/>
-                <Entry x:Name="TaillefEntry" Grid.Column="0" Grid.Row="1" Placeholder="Tapez votre taille"/>
+                <Entry x:Name="TaillehEntry" TextColor="Olive" Grid.Column="0" Grid.Row="0" Placeholder="Tapez votre taille"/>
+                <Entry x:Name="TaillefEntry" TextColor="Olive" Grid.Column="0" Grid.Row="1" Placeholder="Tapez votre taille"/>
                 
                 <ImageButton Grid.Column="1" 
                              Grid.Row="0" 
