@@ -26,20 +26,27 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
-                   
+
                 </Grid.ColumnDefinitions>
-                <Entry Grid.Column="0" Grid.Row="0" Placeholder="Tapez votre taille"/>
-                <Entry Grid.Column="0" Grid.Row="1" Placeholder="Tapez votre taille"/>
-                <ImageButton Grid.Column="1" Grid.Row="0" Source="poidhomme" Clicked="hommebtn"/>
+                <Entry x:Name="TaillehEntry" Grid.Column="0" Grid.Row="0" Placeholder="Tapez votre taille"/>
+                <Entry x:Name="TaillefEntry" Grid.Column="0" Grid.Row="1" Placeholder="Tapez votre taille"/>
+                
+                <ImageButton Grid.Column="1" 
+                             Grid.Row="0" 
+                             WidthRequest="10" 
+                             HeightRequest="10" 
+                             Source="poidhomme" 
+                             Clicked="hommebtn"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"/>
+                
                 <ImageButton Grid.Column="1" Grid.Row="1" Source="femme" Clicked="femmebtn"/>
-                <Label Text="Kg"
+                <Label x:Name="PoidshLabel"  Text="Kg"
                        Grid.Column="2" Grid.Row="0"
                        />
-                <Label Text="Kg"
+                <Label x:Name="PoidsfLabel" Text="Kg"
                        Grid.Column="2" Grid.Row="1"/>
             </Grid>
-
-
         </VerticalStackLayout>
     </ScrollView>
 
